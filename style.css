@@ -1,0 +1,32 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+p{
+    text-align: justify;
+}
+#box{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+#header{
+    background-color: #0101ef;
+    padding: 20px;
+}
+#menubar{
+    background-color: #eeeefc;
+    margin: auto;
+}
+#teksMenu{
+    text-decoration: none;
+}
+#konten{
+    padding: 20px;
+}
+#footer{
+    background-color: red;
+    padding: 20px;
+}
