@@ -1,32 +1,74 @@
-html, body{
+html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Warna background layar agar box lebih menonjol */
+    color: #333;
 }
-p{
-    text-align: justify;
-}
-#box{
+
+#box {
     width: 1000px;
     height: auto;
-    margin: auto;
-    border: 1px solid #ccc;
+    margin: auto; /* Kasih jarak atas bawah */
+    background-color: #fff;
+    border: none; /* Hilangkan border kaku */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Tambahkan bayangan lembut */
+    border-radius: 8px; /* Sudut agak bulat biar modern */
+    overflow: hidden; /* Agar konten tidak keluar dari sudut bulat */
+    
 }
-#header{
-    background-color: #0101ef;
-    padding: 20px;
+
+#header {
+   /* 1. Ganti warna biru dengan gambar */
+    background-image: url('https://i.pinimg.com/1200x/0e/07/80/0e0780cec5095b930a6e5043d683ec03.jpg'); 
+    
+    /* 2. Atur agar gambar memenuhi area header */
+    background-size: cover;
+    background-position: center;
+    
+    /* 3. Atur padding dan teks */
+    padding: 90px 30px; /* Diperlebar sedikit agar gambarnya terlihat jelas */
+    text-align: center;
+    color: white; /* Tulisan jadi putih agar kontras dengan gambar */
+    
+    /* 4. Opsional: Tambahkan bayangan teks agar lebih mudah dibaca */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-#menubar{
-    background-color: #eeeefc;
-    margin: auto;
+
+#menubar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px; /* Jarak antar menu */
 }
-#teksMenu{
+
+#teksMenu {
     text-decoration: none;
+    color: #2a5298;
+    font-weight: 600;
+    transition: 0.3s; /* Efek halus saat di-hover */
 }
-#konten{
-    padding: 20px;
+
+#teksMenu:hover {
+    color: #ff9800; /* Berubah warna saat kursor nempel */
 }
-#footer{
-    background-color: red;
+
+#konten {
+    padding: 40px;
+    min-height: 400px;
+    line-height: 1.8; /* Jarak antar baris biar enak dibaca */
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#footer {
+    background-color: #333; /* Ganti merah ke abu gelap/hitam agar lebih profesional */
     padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
 }
