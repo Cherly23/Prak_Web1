@@ -1,14 +1,192 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Portofolio</title>
-    </head>
-    <body>
-        <ol>
-            <h1>Tugas-Tugas  Pemograman Web 1</h1>
-            <li>Tugas 1 : <a href="Prak1_Cherly.html">Praktikum 1</a></li>
-            <li>Tugas 2 : <a href="Prak2_Cherly.html">Praktikum 2</a></li>
-            <li>Tugas 3 : <a href="Prak3_Cherly.html">Praktikum 3</a></li>
-        </ol>
-    </body>
+<head>
+    <title>Portofolio Tugas Web 1</title>
+    <style>
+        /* Mengatur font dan background seluruh halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Wadah utama (Card) */
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 700px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* Mengatur tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Header tabel */
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        /* Sel tabel */
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #34495e;
+        }
+
+        /* Baris genap berwarna berbeda */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Efek hover pada baris */
+        tr:hover {
+            background-color: #eaf2f8;
+        }
+
+        /* Mengatur tampilan link */
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        /* Efek saat link disentuh kursor */
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        /* Judul setiap modul */
+        .module-title {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            font-weight: 600;
+            border-radius: 8px 8px 0 0;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tugas Pemrograman Web 1</h1>
+        
+        <!-- Tabel Modul 1 -->
+        <div class="module-title">Modul 1</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tugas</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td>1</td>
+                    <td>Tugas 1</td>
+                    <td><a href="Prak1_Cherly.html">Praktikum 1</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tugas 2</td>
+                    <td><a href="Prak2_Cherly.html">Praktikum 2</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tugas 3</td>
+                    <td><a href="Prak3_Cherly.html">Praktikum 3</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tugas 4</td>
+                    <td><a href="Tugas1_web.html">Tugas Modul 1</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tabel Modul 2 -->
+        <div class="module-title">Modul 2</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tugas</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tugas 1</td>
+                    <td><a href="Margin.html">Praktikum Margin</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tugas 2</td>
+                    <td><a href="Positioning.html">Praktikum Positioning</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tugas 3</td>
+                    <td><a href="Home.html">Praktikum Modul 2</a></td>
+            </tbody>
+        </table>
+
+         <!-- Tabel Modul 3 -->
+        <div class="module-title">Modul 2</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tugas</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tugas 1</td>
+                    <td><a href="Prak1_php.php">Praktikum PHP</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tugas 2</td>
+                    <td><a href="">Praktikum 2</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tugas 3</td>
+                    <td><a href="">Praktikum Modul 3</a></td>
+            </tbody>
+        </table>
+    </div>
+
+</body>
 </html>
+
